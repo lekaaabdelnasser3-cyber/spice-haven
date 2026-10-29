@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Table — Spice Haven</title>
+  <meta name="description" content="Book a table at Spice Haven — Reserve your dining experience today.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">SPICE HAVEN</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="about.html">ABOUT</a>
+        <a href="about.html#contact">CONTACT</a>
+        <a href="book-a-table.html" class="nav-book active">BOOK A TABLE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>BOOK A TABLE</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="booking" id="booking-form">
+
+          <div class="field">
+            <label for="party">PARTY SIZE</label>
+            <select id="party" name="party">
+              <option>1 Guest</option>
+              <option selected>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5 Guests</option>
+              <option>6 Guests</option>
+              <option>7 Guests</option>
+              <option>8 Guests</option>
+              <option>9 Guests</option>
+              <option>10 Guests</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="date">DATE</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="field">
+              <label for="time">TIME</label>
+              <input type="time" id="time" name="time">
+            </div>
+          </div>
+
+          <hr>
+
+          <p class="slots-title">CHOOSE AN AVAILABLE TIME SLOT</p>
+          <div class="slots">
+            <button type="button" class="slot">12:00 PM</button>
+            <button type="button" class="slot">12:30 PM</button>
+            <button type="button" class="slot">1:00 PM</button>
+            <button type="button" class="slot">1:30 PM</button>
+            <button type="button" class="slot">2:00 PM</button>
+            <button type="button" class="slot">2:30 PM</button>
+            <button type="button" class="slot">3:00 PM</button>
+            <button type="button" class="slot">3:30 PM</button>
+            <button type="button" class="slot">6:00 PM</button>
+            <button type="button" class="slot">6:30 PM</button>
+            <button type="button" class="slot">7:00 PM</button>
+            <button type="button" class="slot">7:30 PM</button>
+            <button type="button" class="slot">8:00 PM</button>
+            <button type="button" class="slot">8:30 PM</button>
+            <button type="button" class="slot">9:00 PM</button>
+            <button type="button" class="slot">9:30 PM</button>
+          </div>
+
+          <button type="submit" class="btn btn--solid">BOOK NOW</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Popup: shown when someone presses "Book now" -->
+  <div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <h2 id="modal-title">Online reservations are currently unavailable</h2>
+      <p>To make a reservation, please call us directly on<br><strong>123-456-7890</strong></p>
+      <button type="button" class="btn" id="close-modal">CLOSE</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-tag">INDIAN RESTAURANT &amp; CAFFE</p>
+      <strong class="footer-logo">SPICE HAVEN</strong>
+      <address>
+        500 Terry Francine St.<br>
+        San Francisco CA 94158<br>
+        T: <a href="tel:1234567890">123-456-7890</a><br>
+        E: <a href="mailto:info@spicehaven.com">info@spicehaven.com</a>
+      </address>
+      <p>Mon–Sun: 12:00 PM – 10:30 PM</p>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="about.html">ABOUT</a>
+        <a href="about.html#contact">CONTACT</a>
+        <a href="book-a-table.html">BOOK A TABLE</a>
+        <a href="#">INSTAGRAM</a>
+        <a href="#">FACEBOOK</a>
+      </nav>
+
+      <p class="copyright">© 2025 by Spice Haven. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
